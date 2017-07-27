@@ -38,10 +38,10 @@ Void
 
 ### Change Log
 #### 1.2.1 - 2017/07/27
-    - Added the `getDOM()` method.
+ - Added the `getDOM()` method.
 #### 1.2.0
-    - Added the save() method.
+ - Added the save() method.
 #### 1.0.1
-    - Added the getSingleNode() method.
+ - Added the getSingleNode() method.
 #### 1.0.0
-    - Released initially.
+ - Released initially.

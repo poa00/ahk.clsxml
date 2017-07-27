@@ -1,8 +1,6 @@
 /**
- * @version       1.0.1       Added the getSingleNode() method.
- * @version       1.2.0       Added the save() method.
+ * @version       1.2.1       Updated some doc-block descriptions.
  */
-
 class oXMLManipulator {
     
     oXMLCOM     := ""
@@ -59,7 +57,18 @@ class oXMLManipulator {
             }    
     
     /**
-     * Sets the preceding path elements so that there will be no need to enter those each time calling `getValue()`
+     * @since       1.2.1
+     */
+    getDOM() {
+        return this.oXMLCOM
+    }    
+    
+    /**
+     * Sets the preceding path elements so that there will be no need to enter those each time calling `getValue()`     
+     *
+     * Sets the node prefix for the `getValue()` method. Use this when you want to omit preceding part of the node path.
+     *
+     * For example if you want to retrieve value of `Items` -> `Item` -> `Path`, then setting `Items` as a path prefix ebales you to get the value by omitting the set prefix `Item` and you need to spefiy just only `Item`, `Path`.
      */
     setNodePathPrefix( aPath* ) {
         this.aNodePathPrefix := aPath
